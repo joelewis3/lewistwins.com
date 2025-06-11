@@ -25,7 +25,7 @@ export default function Layout({ children, categoryColor = null }) {
     segments.forEach((segment, index) => {
       currentPath += `/${segment}`;
       if (segment === 'category') {
-        breadcrumbs.push({ label: 'Categories', href: currentPath });
+        breadcrumbs.push({ label: 'Categories', href: '/' });
       } else if (index === segments.length - 1 && segments[0] === 'category') {
         breadcrumbs.push({ label: 'Category', href: currentPath });
       }
