@@ -19,14 +19,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Lewis Twins" }],
   creator: "Lewis Twins",
   publisher: "Lewis Twins",
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "32x32" }
-    ],
-    shortcut: "/favicon.ico",
-    apple: "/favicon.svg",
-  },
 };
 
 export default function RootLayout({
