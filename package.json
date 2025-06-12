@@ -10,8 +10,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "next:build": "next build",
-    "pages:convert": "npx @cloudflare/next-on-pages",
+    "pages:convert": "npx @cloudflare/next-on-pages --output-dir dist",
     "build": "npm run next:build && npm run pages:convert",
+    "build:cloudflare": "next build && npx @cloudflare/next-on-pages --output-dir dist",
+    "vercel:build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
