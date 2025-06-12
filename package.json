@@ -9,11 +9,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
-    "next:build": "next build",
-    "pages:convert": "npx @cloudflare/next-on-pages",
     "build": "next build && npx @cloudflare/next-on-pages",
-    "build:cloudflare": "next build && npx @cloudflare/next-on-pages",
-    "vercel:build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
