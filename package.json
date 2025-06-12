@@ -2,10 +2,15 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "config": {
+    "next-on-pages": {
+      "skipVercel": true
+    }
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "next:build": "next build",
-    "pages:convert": "npx @cloudflare/next-on-pages",
+    "pages:convert": "npx @cloudflare/next-on-pages --output-dir dist",
     "build": "npm run next:build && npm run pages:convert",
     "start": "next start",
     "lint": "next lint"
