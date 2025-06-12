@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build:cf": "next build && VERCEL=0 npx @cloudflare/next-on-pages",
+    "build:cf": "next build && npx @cloudflare/next-on-pages --skip-build",
     "start": "next start",
     "lint": "next lint"
   },
