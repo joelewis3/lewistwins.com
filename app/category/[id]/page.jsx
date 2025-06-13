@@ -1,5 +1,8 @@
 'use client';
 
+// Configure for Cloudflare Pages Edge Runtime
+export const runtime = 'edge';
+
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
