@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    runtime: 'experimental-edge'
-  }
+  // Configuration for Cloudflare Pages compatibility
 }
 
 export default nextConfig
